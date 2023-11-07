@@ -25,15 +25,25 @@ function App() {
     setConvertedAmount(amount * Currencyinfo[toFeild])
   }
 
-  const bgImg = "https://images.pexels.com/photos/5466789/pexels-photo-5466789.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   const bgImg = "https://images.pexels.com/photos/3532544/pexels-photo-3532544.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
   return (
-    <div
-        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-        style={{
-            backgroundImage: `url(${bgImg})`,
-        }}
+    <>
+      <div className='w-full flex bg-[#414141]'>
+        <div className=' w-1/2 flex flex-col items-center justify-center gap-10'>
+        <h1 className=' text-4xl font-bold text-blue-50'>Chai aur Code</h1>
+        <img className=' rounded-lg' src="https://images.pexels.com/photos/18681382/pexels-photo-18681382/free-photo-of-coding.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="hitesh choudhary" />
+
+        </div>
+
+        <div
+        className=" bg-[#313131] w-1/2 h-screen flex flex-col  justify-center items-center gap-10   " //
+        // style={{
+        //     backgroundImage: `url(${bgImg})`,
+        // }}
+        
     >
-        <div className="w-full">
+        <h1 className=' text-4xl font-bold text-blue-50'>Currency Converter</h1>
+        <div className="w-1/2">
             <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
@@ -81,6 +91,9 @@ function App() {
             </div>
         </div>
     </div>
+      </div>
+   
+    </>
 );
 }
 

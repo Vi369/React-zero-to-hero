@@ -31,7 +31,7 @@ function App() {
       <div className='w-full flex bg-[#414141]'>
         <div className=' w-1/2 flex flex-col items-center justify-center gap-10'>
         <h1 className=' text-4xl font-bold text-blue-50'>Chai aur Code</h1>
-        <img className=' rounded-lg' src="https://images.pexels.com/photos/18681382/pexels-photo-18681382/free-photo-of-coding.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="hitesh choudhary" />
+        <img className=' rounded-lg ' src="https://images.pexels.com/photos/18681382/pexels-photo-18681382/free-photo-of-coding.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="hitesh choudhary" />
 
         </div>
 
@@ -67,7 +67,7 @@ function App() {
                     <div className="relative w-full h-0.5">
                         <button
                             type="button"
-                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
+                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 hover:bg-blue-800 text-white px-2 py-0.5"
                             onClick={swap}
                         >
                             swap
@@ -84,7 +84,7 @@ function App() {
                             
                         />
                     </div>
-                    <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
+                    <button type="submit" className="w-full bg-blue-600 hover:bg-blue-800 text-white px-4 py-3 rounded-lg">
                         Convert {`${from.toUpperCase()} to ${toFeild.toUpperCase()}`}
                     </button>
                 </form>
